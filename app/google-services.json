@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "630608189116",
+    "project_id": "invitation-card-8840a",
+    "storage_bucket": "invitation-card-8840a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630608189116:android:9022807263734fd59022b9",
+        "android_client_info": {
+          "package_name": "com.swa.invitationcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630608189116-i56qoirftqjullie7mpqi935buud5or2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swa.invitationcard",
+            "certificate_hash": "d59587748a6b364904d29deb2d01cd3061bb9acd"
+          }
+        },
+        {
+          "client_id": "630608189116-8pnr2v83t5msgqc4iv3v2abr3i3f4jmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8OZJx99kJDeXp_CQQ_wjDYFOeUPwESOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630608189116-8pnr2v83t5msgqc4iv3v2abr3i3f4jmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

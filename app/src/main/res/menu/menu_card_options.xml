@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_create_guest_list"
+        android:title="Create Guest List" />
+    <item
+        android:id="@+id/action_things_to_buy"
+        android:title="Things to Buy" />
+    <item
+        android:id="@+id/action_rsvp_list"
+        android:title="RSVP List" />
+    <item
+        android:id="@+id/action_share_with_cohost"
+        android:title="Share with Cohost" />
+</menu>

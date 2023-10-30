@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back_arrow"
+            app:backgroundTint="@null"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/appbar_padding"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_vertical"
+            android:minHeight="?actionBarSize"
+            android:text="Birthdays"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@color/primaryFontColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="end"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/birthdayView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/addReminder"
+        app:layout_constraintTop_toBottomOf="@id/heading"/>
+
+    <TextView
+        android:id="@+id/noReminders"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:visibility="gone"
+        android:text="Establish a foolproof reminder system to always remember your friend's birthdays."
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/addReminder"
+        app:layout_constraintTop_toBottomOf="@id/heading"/>
+
+
+
+    <Button
+        android:id="@+id/addReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/home_feature_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Add a New Reminder"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+<!--    <com.nambimobile.widgets.efab.ExpandableFabLayout-->
+<!--        android:id="@+id/floatLayout"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <com.nambimobile.widgets.efab.Overlay-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:overlay_orientation="portrait"/>-->
+<!--        <com.nambimobile.widgets.efab.ExpandableFab-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom|end"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:efab_color="@color/primaryFontColor"-->
+<!--            app:efab_orientation="portrait"/>-->
+<!--        <com.nambimobile.widgets.efab.FabOption-->
+<!--            android:id="@+id/addReminder"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fab_orientation="portrait"-->
+<!--            app:fab_color="@color/white"-->
+<!--            app:label_textColor="@color/black"-->
+<!--            app:label_backgroundColor="@color/white"-->
+<!--            app:fab_icon="@drawable/ic_plus_symbol"-->
+<!--            app:label_text="Add Reminder"/>-->
+
+<!--        <com.nambimobile.widgets.efab.Overlay-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:overlay_orientation="landscape"/>-->
+<!--        <com.nambimobile.widgets.efab.ExpandableFab-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom|end"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:efab_color="@color/primaryFontColor"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:efab_orientation="landscape"/>-->
+<!--        <com.nambimobile.widgets.efab.FabOption-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fab_orientation="landscape"-->
+<!--            app:fab_color="@color/primaryFontColor"-->
+<!--            app:label_text="Landscape Option 1"/>-->
+
+<!--    </com.nambimobile.widgets.efab.ExpandableFabLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

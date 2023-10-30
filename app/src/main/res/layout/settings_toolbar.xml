@@ -1,0 +1,39 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/toolbar_settings"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/text_color"
+    android:theme="@style/PreferencesTheme"
+    android:orientation="vertical"
+    />
+
+<FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" />
+
+</RelativeLayout>
+
+<!--
+<android.support.v7.widget.Toolbar
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+android:id="@+id/set_toolbar"
+android:layout_height="?attr/actionBarSize"
+android:layout_width="match_parent"
+android:minHeight="?attr/actionBarSize"
+android:background="?attr/colorPrimary"
+app:title="Settings"
+app:navigationIcon="@drawable/arrow_left"
+app:theme="@style/AppTheme"
+app:titleTextColor="@color/theme_color"
+app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
